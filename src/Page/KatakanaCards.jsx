@@ -16,7 +16,7 @@ const KatakanaCards = () => {
           <button
             className="text-xl p-2 rounded-lg bg-gray-200 hover:bg-sky-200"
             onClick={() => {
-              navigation(0);
+              navigation("/katakana");
             }}
           >
             Suffle Cards

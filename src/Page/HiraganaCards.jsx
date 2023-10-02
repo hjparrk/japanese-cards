@@ -17,7 +17,7 @@ const HiraganaCards = () => {
           <button
             className="text-xl p-2 rounded-lg bg-gray-200 hover:bg-sky-200"
             onClick={() => {
-              navigation("/hiragana");
+              navigation(0);
             }}
           >
             Suffle Cards

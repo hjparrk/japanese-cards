@@ -2,10 +2,13 @@ import { Fragment, useState } from "react";
 import { Navigation } from "../components/Navigation";
 import SuffledWords from "../components/SuffledWords";
 import WordCard from "../components/WordCard";
+import { useNavigate } from "react-router-dom";
 
 const HiraganaCards = () => {
   const [suffledWords] = useState(SuffledWords(true));
-  console.log(suffledWords);
+
+  const navigation = useNavigate();
+
   return (
     <Fragment>
       <div className="flex flex-col gap-12 items-center justify-center">
@@ -14,7 +17,7 @@ const HiraganaCards = () => {
           <button
             className="text-xl p-2 rounded-lg bg-gray-200 hover:bg-sky-200"
             onClick={() => {
-              window.location.reload();
+              navigation(0);
             }}
           >
             Suffle Cards

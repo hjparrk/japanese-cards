@@ -10,7 +10,7 @@ const Home = () => {
     <Fragment>
       <div className="flex flex-col gap-12 items-center justify-center">
         <Navigation />
-        <div className="flex flex-col gap-5 items-center justify-center">
+        <div className="flex flex-col gap-6 items-center justify-center">
           <h1 className="text-3xl font-bold">Japanese</h1>
           <button
             className="p-2 bg-gray-200 rounded-lg hover:bg-sky-200"
